@@ -1,0 +1,7 @@
+{
+    "Member": {
+        "type": "MemberListenerType",
+        "classname": "IPS\\discord\\listeners\\Member",
+        "extends": "IPS\\Member"
+    }
+}

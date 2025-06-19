@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build>
+ <module key="admin/system"><![CDATA[{"default_controller":"config","protected":0,"default":1}]]></module>
+ <module key="front/system"><![CDATA[{"default_controller":"","protected":0,"default":0}]]></module>
+ <setting key="discord_automation_sync_limit"><![CDATA[{"key":"discord_automation_sync_limit","default":"1000"}]]></setting>
+ <setting key="discord_automation_sync_member_events"><![CDATA[{"key":"discord_automation_sync_member_events","default":"[\"login\",\"profile_update\",\"spammer\",\"delete\"]"}]]></setting>
+ <setting key="discord_automation_sync_nicknames"><![CDATA[{"key":"discord_automation_sync_nicknames","default":"1"}]]></setting>
+ <setting key="discord_automation_sync_unassigned_roles"><![CDATA[{"key":"discord_automation_sync_unassigned_roles","default":"keep"}]]></setting>
+ <setting key="discord_bot_token"><![CDATA[{"key":"discord_bot_token","default":""}]]></setting>
+ <setting key="discord_client_id"><![CDATA[{"key":"discord_client_id","default":""}]]></setting>
+ <setting key="discord_client_secret"><![CDATA[{"key":"discord_client_secret","default":""}]]></setting>
+ <setting key="discord_default_invite_code"><![CDATA[{"key":"discord_default_invite_code","default":""}]]></setting>
+ <setting key="discord_group_roles"><![CDATA[{"key":"discord_group_roles","default":""}]]></setting>
+ <setting key="discord_license_instance_id"><![CDATA[{"key":"discord_license_instance_id","default":""}]]></setting>
+ <setting key="discord_license_key"><![CDATA[{"key":"discord_license_key","default":""}]]></setting>
+ <setting key="discord_role"><![CDATA[{"key":"discord_role","default":""}]]></setting>
+ <setting key="discord_server"><![CDATA[{"key":"discord_server","default":""}]]></setting>
+ <setting key="discord_server_integration"><![CDATA[{"key":"discord_server_integration","default":""}]]></setting>
+ <setting key="discord_widget_settings"><![CDATA[{"key":"discord_widget_settings","default":""}]]></setting>
+ <widget key="Discord"><![CDATA[{"class":"\\IPS\\Widget\\StaticCache","restrict":["sidebar","cms"],"default_area":"sidebar","allow_reuse":false,"menu_style":"menu","layouts":"grid,minimal,featured,mini-grid,table,wallpaper","embeddable":false,"padding":false,"default_layout":"grid","searchterms":""}]]></widget>
+ <acpsearch key="app=discord&amp;module=system&amp;controller=config"><![CDATA[{"lang_key":"menu__discord_system_config","restriction":"config_manage","keywords":["discord"]}]]></acpsearch>
+ <acpsearch key="app=discord&amp;module=system&amp;controller=invites"><![CDATA[{"lang_key":"menu__discord_system_invites","restriction":"invites_manage","keywords":["discord","invites"]}]]></acpsearch>
+ <acpsearch key="app=discord&amp;module=system&amp;controller=requests"><![CDATA[{"lang_key":"menu__discord_system_requests","restriction":"requests_manage","keywords":["config","discord"]}]]></acpsearch>
+</build>

@@ -1,0 +1,21 @@
+{
+    "html": {
+        "added": [
+            "admin\/memberprofile\/discord",
+            "front\/system\/processInvite",
+            "front\/system\/widget"
+        ],
+        "edited": [],
+        "removed": []
+    },
+    "css": {
+        "added": [],
+        "edited": [],
+        "removed": []
+    },
+    "resources": {
+        "added": [],
+        "edited": [],
+        "removed": []
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "added": [
+        "discord_bot_token",
+        "discord_client_id",
+        "discord_client_secret",
+        "discord_group_roles",
+        "discord_role",
+        "discord_server",
+        "discord_server_integration",
+        "discord_widget_settings",
+        "discord_default_invite_code"
+    ],
+    "edited": [],
+    "removed": []
+}

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme name="Default" author_name="Invision Power Services, Inc" author_url="https://www.invisioncommunity.com">
+ <template template_group="memberprofile" template_name="discord" template_data="$member, $actions = [], $invite = null, $roles = null, $status = false, $nick = null, $id = null" template_location="admin" template_app="discord"><![CDATA[
+<div class='acpMemberView_info ipsBox'>
+    <h2 class="ipsBox__header">
+        <i class="fa-brands fa-discord ipsBox__header-icon" aria-hidden="true"></i>
+        Discord
+    </h2>
+    <ul class="ipsData ipsData--table ipsData--notification-options cMemberNotifications">
+        {{if $status}}
+            <li class="ipsData__item">
+                <div class="ipsData__main">
+                    <h3 class="ipsData__title">
+                        User ID
+                    </h3>
+                    <div class="ipsData__meta">
+                        $id
+                    </div>
+                </div>
+            </li>
+            <li class="ipsData__item">
+                <div class="ipsData__main">
+                    <h3 class="ipsData__title">
+                        Nickname
+                    </h3>
+                    <div class="ipsData__meta">
+                        $nick
+                    </div>
+                </div>
+            </li>
+            <li class="ipsData__item">
+                <div class="ipsData__main">
+                    <h3 class="ipsData__title">
+                        Current Roles
+                    </h3>
+                    <div class="ipsData__meta">
+                        $roles
+                    </div>
+                </div>
+            </li>
+        {{endif}}
+        <li class="ipsData__item">
+            <div class="ipsData__main">
+                <h3 class="ipsData__title">
+                    Status
+                </h3>
+                <div class="ipsData__meta">
+                    {{if $status}}In Server{{else}}Not In Server{{endif}}
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="i-padding_3 i-padding-top_0">
+        <a href="#memberDiscord_menu" data-ipsmenu="" id="memberDiscord" class="ipsButton ipsButton--primary ipsButton--large ipsButton--wide">Account Actions <i class="fa-solid fa-caret-down"></i></a>
+        <div id="memberDiscord_menu" class="ipsMenu ipsMenu_normal ipsHide">
+            <ul>
+                {{if isset($actions['sync']) && $actions['sync'] === true }}
+                    <li class="ipsMenu_item ">
+                        <a href="{url='app=discord&module=system&controller=manage&do=sync&id={$member->member_id}'}">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <span data-role="title">Synchronize Accounts</span>
+                        </a>
+                    </li>
+                {{endif}}
+
+                {{if isset($actions['add']) && $actions['add'] === true }}
+                    <li class="ipsMenu_item ">
+                        <a href="{url='app=discord&module=system&controller=manage&do=add&id={$member->member_id}'}">
+                            <i class="fa-solid fa-user-plus"></i>
+                            <span data-role="title">Add Member To Server</span>
+                        </a>
+                    </li>
+                {{endif}}
+
+                {{if isset($actions['remove']) && $actions['remove'] === true }}
+                    <li class="ipsMenu_item ">
+                        <a href="{url='app=discord&module=system&controller=manage&do=remove&id={$member->member_id}'}">
+                            <i class="fa-solid fa-user-minus"></i>
+                            <span data-role="title">Remove Member From Server</span>
+                        </a>
+                    </li>
+                {{endif}}
+
+                {{if isset($actions['approve']) && $actions['approve'] === true && isset($invite)}}
+                    <li class="ipsMenu_item ">
+                        <a href="{url='app=discord&module=system&controller=requests&do=approve&id={$invite}'}">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span data-role="title">Approve Invite Request</span>
+                        </a>
+                    </li>
+                {{endif}}
+
+                {{if isset($actions['deny']) && $actions['deny'] === true && isset($invite)}}
+                    <li class="ipsMenu_item ">
+                        <a href="{url='app=discord&module=system&controller=requests&do=deny&id={$invite}'}">
+                            <i class="fa-solid fa-thumbs-down"></i>
+                            <span data-role="title">Deny Invite Request</span>
+                        </a>
+                    </li>
+                {{endif}}
+            </ul>
+        </div>
+    </div>
+</div>]]></template>
+ <template template_group="system" template_name="processInvite" template_data="$approvalRequired = false, $alreadyRequested = false, $discordLoginRequired = false, $communityName = null, $guildName = null, $expiration = null, $totalMembers = 0, $onlineMembers = 0, $requestApprovalUrl = null, $acceptUrl = null, $cancelUrl = null" template_location="front" template_app="discord"><![CDATA[
+<div class="ipsBox ipsBox--padding i-display_flex i-flex-direction_column i-justify-content_center i-align-items_center i-gap_3">
+    <div data-ips-hook="header" class="ipsPageHeader__primary i-display_flex i-flex-direction_column i-justify-content_center i-align-items_center">
+        <div class="ipsRichText ipsPageHeader__desc">Join $communityName's Discord Server</div>
+        <div data-ips-hook="title" class="ipsPageHeader__title">$guildName</div>
+    </div>
+    <div class="i-display_flex i-gap_2 i-font-weight_700">
+        <div class="i-display_flex i-align-items_center i-gap_1">
+            <i class="fa-solid fa-circle ipsOnlineStatus_online"></i>
+            <div>$onlineMembers online</div>
+        </div>
+        <div class="i-display_flex i-align-items_center i-gap_1">
+            <i class="fa-solid fa-circle ipsBadg"></i>
+            <div>$totalMembers members</div>
+        </div>
+    </div>
+    {{if $expiration}}
+    <div class="i-font-weight_700">$expiration</div>
+    {{endif}}
+    {{if $approvalRequired }}
+        {{if $alreadyRequested }}
+            <div class="i-font-weight_400">You Have Already Requested To Join</div>
+        {{else}}
+            <form action="$requestApprovalUrl" method="post">
+                <div class="i-display_flex i-justify-content_center i-align-items_center i-gap_2">
+                    <a href="$cancelUrl">Cancel</a>
+                    <button type="submit" class="ipsButton ipsButton--primary">Request Approval</button>
+                </div>
+            </form>
+        {{endif}}
+    {{else}}
+        <form action="$acceptUrl" method="post">
+            <div class="i-display_flex i-justify-content_center i-align-items_center i-gap_2">
+                <a href="$cancelUrl">Cancel</a>
+                <button type="submit" class="ipsButton ipsButton--primary">Accept Invite</button>
+            </div>
+        </form>
+    {{endif}}
+</div>
+]]></template>
+ <template template_group="system" template_name="widget" template_data="$url, $width = '350', $height = '500'" template_location="front" template_app="discord"><![CDATA[
+
+<iframe src="$url" width="$width" height="$height" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>]]></template>
+</theme>

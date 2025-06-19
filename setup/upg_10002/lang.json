@@ -1,0 +1,18 @@
+{
+    "normal": {
+        "added": [
+            "discord_license_key",
+            "discord_license_key_desc",
+            "discord_config_wizard_step_license"
+        ],
+        "edited": [
+            "discord_confirm_clear_message"
+        ],
+        "removed": []
+    },
+    "js": {
+        "added": [],
+        "edited": [],
+        "removed": []
+    }
+}

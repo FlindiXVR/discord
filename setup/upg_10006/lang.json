@@ -1,0 +1,25 @@
+{
+    "normal": {
+        "added": [
+            "discord_automation_sync_limit",
+            "discord_automation_sync_limit_desc",
+            "discord_automation_sync_member_events",
+            "discord_automation_sync_member_events_desc"
+        ],
+        "edited": [
+            "discord_automation_sync_unassigned_roles_desc",
+            "discord_confirm_clear_message",
+            "r__invites_manage",
+            "r__config_manage",
+            "r__manage_manage",
+            "r__requests_manage",
+            "r__automation_manage"
+        ],
+        "removed": []
+    },
+    "js": {
+        "added": [],
+        "edited": [],
+        "removed": []
+    }
+}

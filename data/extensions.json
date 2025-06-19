@@ -1,0 +1,16 @@
+{
+    "core": {
+        "FrontNavigation": {
+            "Invite": "IPS\\discord\\extensions\\core\\FrontNavigation\\Invite"
+        },
+        "GroupForm": {
+            "Group": "IPS\\discord\\extensions\\core\\GroupForm\\Group"
+        },
+        "LoginHandler": {
+            "Discord": "IPS\\discord\\extensions\\core\\LoginHandler\\Discord"
+        },
+        "MemberACPProfileBlocks": {
+            "Discord": "IPS\\discord\\extensions\\core\\MemberACPProfileBlocks\\Discord"
+        }
+    }
+}

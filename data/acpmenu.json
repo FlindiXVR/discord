@@ -1,0 +1,32 @@
+{
+    "system": {
+        "automation": {
+            "tab": "discord",
+            "controller": "automation",
+            "do": "",
+            "restriction": "automation_manage",
+            "subcontrollers": ""
+        },
+        "config": {
+            "tab": "discord",
+            "controller": "config",
+            "do": "",
+            "restriction": "config_manage",
+            "subcontrollers": ""
+        },
+        "invites": {
+            "tab": "discord",
+            "controller": "invites",
+            "do": "",
+            "restriction": "invites_manage",
+            "subcontrollers": ""
+        },
+        "requests": {
+            "tab": "discord",
+            "controller": "requests",
+            "do": "",
+            "restriction": "requests_manage",
+            "subcontrollers": ""
+        }
+    }
+}

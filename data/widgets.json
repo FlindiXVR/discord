@@ -1,0 +1,17 @@
+{
+    "Discord": {
+        "class": "\\IPS\\Widget\\StaticCache",
+        "restrict": [
+            "sidebar",
+            "cms"
+        ],
+        "default_area": "sidebar",
+        "allow_reuse": false,
+        "menu_style": "menu",
+        "layouts": "grid,minimal,featured,mini-grid,table,wallpaper",
+        "embeddable": false,
+        "padding": false,
+        "default_layout": "grid",
+        "searchterms": ""
+    }
+}

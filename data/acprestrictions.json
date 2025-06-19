@@ -1,0 +1,19 @@
+{
+    "system": {
+        "invites": {
+            "invites_manage": "invites_manage"
+        },
+        "config": {
+            "config_manage": "config_manage"
+        },
+        "manage": {
+            "manage_manage": "manage_manage"
+        },
+        "requests": {
+            "requests_manage": "requests_manage"
+        },
+        "automation": {
+            "automation_manage": "automation_manage"
+        }
+    }
+}

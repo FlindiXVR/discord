@@ -1,0 +1,23 @@
+{
+    "normal": {
+        "added": [
+            "menu__discord_system_automation",
+            "discord_license_instance_id",
+            "discord_automation",
+            "discord_automation_sync",
+            "discord_automation_sync_nicknames",
+            "discord_automation_sync_nicknames_desc",
+            "discord_automation_sync_unassigned_roles",
+            "discord_automation_sync_unassigned_roles_desc",
+            "r__automation",
+            "r__automation_manage"
+        ],
+        "edited": [],
+        "removed": []
+    },
+    "js": {
+        "added": [],
+        "edited": [],
+        "removed": []
+    }
+}

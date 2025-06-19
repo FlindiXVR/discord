@@ -1,0 +1,62 @@
+[
+    {
+        "key": "discord_automation_sync_limit",
+        "default": "1000"
+    },
+    {
+        "key": "discord_automation_sync_member_events",
+        "default": "[\"login\",\"profile_update\",\"spammer\",\"delete\"]"
+    },
+    {
+        "key": "discord_automation_sync_nicknames",
+        "default": "1"
+    },
+    {
+        "key": "discord_automation_sync_unassigned_roles",
+        "default": "keep"
+    },
+    {
+        "key": "discord_bot_token",
+        "default": ""
+    },
+    {
+        "key": "discord_client_id",
+        "default": ""
+    },
+    {
+        "key": "discord_client_secret",
+        "default": ""
+    },
+    {
+        "key": "discord_default_invite_code",
+        "default": ""
+    },
+    {
+        "key": "discord_group_roles",
+        "default": ""
+    },
+    {
+        "key": "discord_license_instance_id",
+        "default": ""
+    },
+    {
+        "key": "discord_license_key",
+        "default": ""
+    },
+    {
+        "key": "discord_role",
+        "default": ""
+    },
+    {
+        "key": "discord_server",
+        "default": ""
+    },
+    {
+        "key": "discord_server_integration",
+        "default": ""
+    },
+    {
+        "key": "discord_widget_settings",
+        "default": ""
+    }
+]

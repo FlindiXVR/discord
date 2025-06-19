@@ -1,0 +1,9 @@
+{
+    "added": [
+        "app=discord&module=system&controller=config",
+        "app=discord&module=system&controller=invites",
+        "app=discord&module=system&controller=requests"
+    ],
+    "edited": [],
+    "removed": []
+}

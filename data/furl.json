@@ -1,0 +1,9 @@
+{
+    "topLevel": "",
+    "pages": {
+        "discord_invite": {
+            "friendly": "discord\/invite\/{@code}",
+            "real": "app=discord&module=system&controller=invite"
+        }
+    }
+}

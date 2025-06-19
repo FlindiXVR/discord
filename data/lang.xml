@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+ <app key="discord" version="10013">
+  <word key="__app_discord" js="0">Discord</word>
+  <word key="Discord_info" js="0">Enter your Discord OAuth 2.0 client information.</word>
+  <word key="menutab__discord" js="0">Discord</word>
+  <word key="menutab__discord_icon" js="0">discord fa-brands</word>
+  <word key="menu__discord_system" js="0">System</word>
+  <word key="menu__discord_system_automation" js="0">Automation</word>
+  <word key="menu__discord_system_invites" js="0">Invites</word>
+  <word key="menu__discord_system_config" js="0">Configuration</word>
+  <word key="menu__discord_system_requests" js="0">Requests</word>
+  <word key="module__discord_system" js="0">System</word>
+  <word key="discord_license_key" js="0">License Key</word>
+  <word key="discord_license_key_desc" js="0">A valid license key is required to use this application.</word>
+  <word key="discord_license_instance_id" js="0">Instance ID</word>
+  <word key="discord_invites" js="0">Invites</word>
+  <word key="discord_invites_code" js="0">Code</word>
+  <word key="discord_invites_code_unique" js="0">The code you provided has already been used.</word>
+  <word key="discord_invites_expiration" js="0">Expiration</word>
+  <word key="discord_invites_expiration_past" js="0">The expiration date must be in the future.</word>
+  <word key="discord_invites_approval_required" js="0">Approval Required</word>
+  <word key="discord_invites_approval_required_desc" js="0">Require approval to use this invite code.</word>
+  <word key="discord_invite_url" js="0">Invite URL</word>
+  <word key="discord_invite_success" js="0">You have successfully joined the server.</word>
+  <word key="discord_invite_failed" js="0">We were unable to add you to the server. Please contact an administrator.</word>
+  <word key="discord_invite_approval_requested" js="0">Your request to join the server has been submitted.</word>
+  <word key="discord_invites_requests" js="0">Invite Requests</word>
+  <word key="discord_invites_requests_member_id" js="0">Member</word>
+  <word key="discord_invites_requests_submitted_at" js="0">Submitted</word>
+  <word key="discord_invites_requests_code" js="0">Code</word>
+  <word key="discord_invites_requests_approve" js="0">Approve</word>
+  <word key="discord_invites_requests_deny" js="0">Deny</word>
+  <word key="discord_invites_requests_approved" js="0">The member's invite request has been approved.</word>
+  <word key="discord_invites_requests_failed" js="0">We were unable to add the member to the server. Check the logs for more details.</word>
+  <word key="discord_invites_requests_denied" js="0">The member's invite request has been denied.</word>
+  <word key="discord_client_id" js="0">Client ID</word>
+  <word key="discord_client_id_desc" js="0">Your Discord application OAuth 2.0 Client ID.</word>
+  <word key="discord_client_secret" js="0">Client Secret</word>
+  <word key="discord_client_secret_desc" js="0">Your Discord application OAuth 2.0 Client Secret.</word>
+  <word key="discord_bot_token" js="0">Bot Token</word>
+  <word key="discord_bot_token_desc" js="0">The token for the Discord application's bot.</word>
+  <word key="discord_server_integration" js="0">Enable Server Integration</word>
+  <word key="discord_server_integration_desc" js="0">Check to enable server integration. Click &quot;Add Bot to Server&quot; to add your Discord application to your Discord server.</word>
+  <word key="discord_server" js="0">Server</word>
+  <word key="discord_server_desc" js="0">The server to use for the application.</word>
+  <word key="discord_role" js="0">Role</word>
+  <word key="discord_role_desc" js="0">This role will be given to every member who joins the chosen Discord server.</word>
+  <word key="discord_configuration_clear" js="0">Clear Data</word>
+  <word key="discord_configuration_sync" js="0">Mass Sync</word>
+  <word key="discord_config_wizard" js="0">Configuration Wizard</word>
+  <word key="discord_config_wizard_step_license" js="0">License Key</word>
+  <word key="discord_config_wizard_step1" js="0">Configure OAuth 2.0</word>
+  <word key="discord_config_wizard_step2" js="0">Setup Server</word>
+  <word key="discord_config_wizard_step2_add_server" js="0">Add Bot to Server</word>
+  <word key="discord_config_wizard_step3" js="0">Define Roles</word>
+  <word key="discord_config_wizard_step4" js="0">Finished</word>
+  <word key="discord_config_wizard_error_login_handler" js="0">Please create your Discord Login Handler before configuring the application.</word>
+  <word key="discord_automation" js="0">Automation</word>
+  <word key="discord_automation_sync" js="0">Sync Settings</word>
+  <word key="discord_automation_sync_nicknames" js="0">Sync Nicknames</word>
+  <word key="discord_automation_sync_nicknames_desc" js="0">Keep the member's Discord profile name up-to-date with their Invision Community profile name.</word>
+  <word key="discord_automation_sync_unassigned_roles" js="0">Unassigned Roles</word>
+  <word key="discord_automation_sync_unassigned_roles_desc" js="0">When syncing a member's roles, we may come across roles assigned to the Discord member that are not registered to an Invision Community group. What should we do with those roles?</word>
+  <word key="discord_automation_sync_limit" js="0">Limit</word>
+  <word key="discord_automation_sync_limit_desc" js="0">How many records should we sync at a time? The lower the number, the longer the process will take. NOTE: The Discord application has rate limit handling built in and will automatically recover if met with a rate limit exception.</word>
+  <word key="discord_automation_sync_member_events" js="0">Member Sync Events</word>
+  <word key="discord_automation_sync_member_events_desc" js="0">The member events that should fire a sync.</word>
+  <word key="discord_confirm_clear" js="0">Clear</word>
+  <word key="discord_confirm_clear_title" js="0">Clear Data</word>
+  <word key="discord_confirm_clear_message" js="0">Are you sure you wish to clear all your Discord settings? This will reset all settings to the initial default factory state. This cannot be undone. This will also deactivate your current license key.</word>
+  <word key="discord_confirm_clear_success" js="0">Your Discord data has been successfully reset.</word>
+  <word key="discord_confirm_sync" js="0">Sync All</word>
+  <word key="discord_confirm_sync_title" js="0">Mass Sync</word>
+  <word key="discord_confirm_sync_message" js="0">This will sync every member with your current configuration settings. Are you sure you want to proceed?</word>
+  <word key="discord_confirm_sync_success" js="0">All members have been successfully synced.</word>
+  <word key="discord_sync_setup" js="0">Setting up sync...</word>
+  <word key="discord_sync" js="0">Performing sync.... Current members checked: %s/%s. Total synced: %s</word>
+  <word key="discord_manage_add_success" js="0">The member has been successfully added to the server.</word>
+  <word key="discord_manage_sync_success" js="0">The member has been successfully synced.</word>
+  <word key="discord_manage_remove_success" js="0">The member has been successfully removed from the server.</word>
+  <word key="r__invites" js="0">Invites</word>
+  <word key="r__invites_manage" js="0">Can manage invites?</word>
+  <word key="r__config" js="0">Configuration</word>
+  <word key="r__config_manage" js="0">Can manage configuration?</word>
+  <word key="r__manage" js="0">Manage</word>
+  <word key="r__manage_manage" js="0">Can manage members?</word>
+  <word key="r__requests" js="0">Requests</word>
+  <word key="r__requests_manage" js="0">Can manage invite requests?</word>
+  <word key="r__automation" js="0">Automation</word>
+  <word key="r__automation_manage" js="0">Can manage automation settings?</word>
+  <word key="discord_invite_perm__label" js="0">Permissions</word>
+  <word key="discord_invite_perm__view" js="0">Can use code</word>
+  <word key="discord_invite_perm__bypass" js="0">Can bypass approval</word>
+  <word key="discord_group_roles" js="0">Group Settings</word>
+  <word key="group__discord_Group" js="0">Discord</word>
+  <word key="group_discord_role_id" js="0">Role</word>
+  <word key="group_discord_role_id_desc" js="0">Every member who joins this group will be assigned the following role in Discord.</word>
+  <word key="group_discord_role_none" js="0">Do not assign to a Discord role.</word>
+  <word key="discord_widget_settings" js="0">Widget Settings</word>
+  <word key="block_Discord" js="0">Discord</word>
+  <word key="block_Discord_desc" js="0">Add your Discord server widget.</word>
+  <word key="discord_width_theme" js="0">Theme</word>
+  <word key="discord_width_width" js="0">Width</word>
+  <word key="discord_width_height" js="0">Height</word>
+  <word key="frontnavigation_discord" js="0">Discord Invite</word>
+  <word key="discord_default_invite_code" js="0">Default Invite Code</word>
+  <word key="discord_default_invite_code_desc" js="0">If set, the Invision Community menu link will redirect the user to use this invite code.</word>
+ </app>
+</language>

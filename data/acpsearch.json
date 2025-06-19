@@ -1,0 +1,25 @@
+{
+    "app=discord&module=system&controller=config": {
+        "lang_key": "menu__discord_system_config",
+        "restriction": "config_manage",
+        "keywords": [
+            "discord"
+        ]
+    },
+    "app=discord&module=system&controller=invites": {
+        "lang_key": "menu__discord_system_invites",
+        "restriction": "invites_manage",
+        "keywords": [
+            "discord",
+            "invites"
+        ]
+    },
+    "app=discord&module=system&controller=requests": {
+        "lang_key": "menu__discord_system_requests",
+        "restriction": "requests_manage",
+        "keywords": [
+            "config",
+            "discord"
+        ]
+    }
+}
